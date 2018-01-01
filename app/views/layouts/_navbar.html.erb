@@ -9,7 +9,7 @@
           <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
         </li>
         <li class="list-group-item">
-          <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
+          <%= link_to 'My posts', author_posts_path, class: "nav-link #{yield(:author)}" %>
         </li>
       </ul>
     </div>
@@ -19,7 +19,7 @@
 <nav class="navbar navbar-light bg-faded">
   <div class='container'>
     <a class='navbar-brand' href='/'>
-      Frog<span class='light'>blog</span>
+      Jacube.it<span class='light'> Ruby on Rails Blog</span>
     </a>
     <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
       &#9776;
@@ -34,7 +34,9 @@
       <li class="nav-item">
         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
-
+      <li class="nav-tem">
+        <%= link_to 'My posts', author_posts_path, class: "nav-link #{yield(:author)}" %>
+      </li>
     </ul>
   </div>
 </nav>
